@@ -5,6 +5,10 @@ A personal creative project exploring the world of **Rain** through pixel art, i
 
 Rain Chronicles is an evolving project. New characters, stories, features, and interactive experiences will be added over time.
 
+## Demo
+
+https://github.com/user-attachments/assets/02703e13-c76f-4ee8-b5ed-a06b6ec427dc
+
 ## Tech Stack
 
 | Technology | Purpose |
