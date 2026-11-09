@@ -1,0 +1,86 @@
+
+.landing {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+/* RED BEAM */
+
+.beam {
+  position: absolute;
+  left: calc(20.5% + 112px);
+  top: calc(50.5% - 50px);
+
+  width: 0;
+  height: 4px;
+
+  background: #ff0000;
+
+  box-shadow:
+    0 0 6px #ff0000,
+    0 0 14px #ff0000,
+    0 0 25px rgba(255, 0, 0, 0.7);
+
+  animation:
+    beamShoot 0.8s ease-out 1.7s 1 forwards,
+    beamPulse 1.2s ease-in-out 2.5s infinite;
+}
+
+@keyframes beamShoot {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 65vw;
+  }
+}
+
+@keyframes beamPulse {
+  from {
+    box-shadow:
+      0 0 5px #ff0000,
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      0 0 40px rgba(255, 0, 0, 0.6);
+  }
+
+  to {
+    box-shadow:
+      0 0 8px #ff0000,
+      0 0 18px #ff0000,
+      0 0 35px #ff0000,
+      0 0 65px rgba(255, 0, 0, 1);
+  }
+}
+
+/* ENTER */
+
+.enter {
+  position: absolute;
+  right: 10%;
+  top: calc(50% - 75px);
+
+  opacity: 0;
+  color: white;
+
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+
+  animation: enterAppear 0.4s ease-out 2.5s 1 forwards;
+}
+
+@keyframes enterAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

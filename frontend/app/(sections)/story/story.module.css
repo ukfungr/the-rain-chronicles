@@ -1,0 +1,4 @@
+.section { max-width: 650px; margin-top: 12vh; }
+.eyebrow { color: #ff3333; font-size: 9px; letter-spacing: 2px; margin-bottom: 24px; }
+.title { color: #eee; font-size: clamp(16px, 2vw, 24px); line-height: 1.8; margin-bottom: 24px; }
+.description { color: #999; font-family: monospace; font-size: 15px; line-height: 1.8; }
